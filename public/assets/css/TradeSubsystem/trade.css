@@ -1,0 +1,369 @@
+body.modal-open {
+  overflow-y: hidden;
+  position:relative;
+}
+
+.trade-modal {
+    position: fixed;
+    width: 100%;
+    max-height: 100vh;
+    overflow-x: visible;
+    background: white;
+    right: -100%;
+    left: auto;
+    overflow-y: auto;
+    top: 50%;
+    box-shadow: 0px 30.7947px 30.7947px rgba(0, 0, 0, 0.08);
+    z-index: 320; 
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: tranlslateY(-50%);
+    transform: translateY(-50%);
+    transition: all 0.2s linear;
+}
+
+.border-top-xs-only {
+    border-top: 1px solid #dee2e6!important;
+}
+
+.trade-modal .wdt-emoji-picker,
+#analysis-field-wrapper {
+    display: none;
+}
+
+.trade-modal.open {
+    right: 0px;
+}
+
+.limit-exceeded-warning {
+    display: none;
+}
+
+.input-group-currency {
+  position: relative;
+}
+
+.input-group-currency .pair-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.4rem;
+    width: 1.625rem;
+    transform: translateY(-50%);
+}  
+
+.input-group-currency .input-tooltip {
+    position: absolute;
+    top: 50%;
+    right: 0.4rem;
+    width: 2.4rem;
+    transform: translateY(-50%);
+} 
+
+.input-group-currency .input-inner-label {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    color: #9696bb;
+    font-weight: 500;
+    width: 4rem;
+    text-align: right;
+    transform: translateY(-50%);
+}
+
+.input-group-currency .input-tooltip .small {
+  top: -0.0625rem;
+  position: relative;
+}
+
+.h2-sm { 
+  font-size: 1.2rem;
+}
+
+.input-group-currency .form-control {
+    border: 1px solid #F0F0EF;
+    box-sizing: border-box;
+    border-radius: 1.3125rem;
+    background: #fff;
+    padding: .5rem .75rem .5rem 2.5rem;
+}
+.input-group-currency .form-control[readonly] {
+    background: #e9ecef;
+}
+
+#leverage-options .btn-outline-secondary {
+    width: 3rem;
+    border-radius: 0.5rem;
+}
+
+#leverage-options .btn-outline-secondary:not(:disabled):not(.disabled).active, 
+#leverage-options .btn-outline-secondary:not(:disabled):not(.disabled):active, 
+#leverage-options .show>.btn-outline-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #545490;
+    border-color: #545490;
+}
+
+#leverage-options .btn-outline-secondary {
+    color: #000000;
+    background-color: transparent;
+    background-image: none;
+    border-color: #9696bb;
+}
+
+.trade-description-holder {
+  background: #FFFFFF;
+  border: 1px solid #F0F0EF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+} 
+
+.trade-description-holder textarea {
+    width: 100%;
+    background: transparent;
+    border: 0px;
+    padding: 0;
+}
+
+.trade-description-holder  textarea:focus {
+    outline-offset: 0px;
+    outline: 0px;
+}
+
+.trade-description-options {
+    font-size: 1.2rem;
+}
+
+/* buttons */
+
+.btn-order-option {
+    border-radius: 0;
+    border: 0px;
+    color: #9696BB;
+}
+
+.btn-order-option.active {
+  color: #000;
+}
+
+.btn-order-option:hover {
+  color: #000;
+} 
+
+.btn-order-option.focus,
+.btn-order-option:focus {
+  box-shadow: 0 0 0;
+} 
+
+.trade-sub-block { 
+  background:#F5F5FA;
+  border-radius: 8px;
+}
+
+.tradingview-preview .tradingview-widget {
+    padding-top: 10px;
+}
+
+.youtube-preview,
+.tradingview-preview,
+.image-upload {
+    position: static;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+    line-height: 1.4;
+    text-align: left;
+    background-color: rgba(0,0,0,.05);
+} 
+
+.image-preview img {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.link-preview {
+    position: static;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+    line-height: 1.4;
+    text-align: left;
+    background-color: rgba(0,0,0,.05);
+}
+
+.trade-img-preview {
+    height: 15rem;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.full-preview-block {
+    position: relative;
+}
+
+button#delete-analysis-image {
+    position: absolute;
+    z-index: 2;
+    right: 1rem;
+    top: 1rem;
+}
+
+
+
+.link-meta-info.link-meta-preview {
+    position: static;
+    display: block;
+    max-width: 100%;
+    padding: 70px 0px 0px 146px;
+    overflow: hidden;
+    font-size: 13px;
+  
+    line-height: 1.4;
+    text-align: left;
+}
+
+.link-meta-info.link-meta-preview.loaded {
+    padding: 15px 0px 0px 146px;
+}
+
+.link-meta-info.link-meta-preview.failed {
+    padding: 15px 0px 0px 0px;
+}
+ 
+.link-meta-info.empty {
+    padding: 0px 0px 0px 0px;
+} 
+ 
+.link-meta-info .link-thumbnail {
+    float: left;
+    margin-left: -145px;
+}
+
+.link-meta-info .link-thumbnail img {
+    max-width: 130px;
+    border-radius: 5px;
+}
+.link-meta-info h6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.link-meta-info small {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+
+.icon-tv-white {display: none;}
+label.active .icon-tv-white {    display: inline-block;}
+label.active .icon-tv {display: none;}  
+
+label:hover .icon-tv-white {    display: inline-block;}
+label:hover .icon-tv {display: none;}  
+
+.spinner-holder {
+    position: relative;
+    display: block;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.introjs-arrow.top {
+    top: -10px;
+    border-bottom-color: #fff;
+    display: block !important;
+}
+
+table .btn-sm {
+    padding: 0.2rem 0.875rem;
+}
+
+
+.progress {
+    box-shadow: 0 0 0;
+}
+
+.progress-bar {
+    background-color: #62366a;
+}
+@media all and (max-width: 413px){
+
+  .introjs-tooltip.first-step.introjs-floating {
+    margin-top: 60px !important;
+  }
+
+  .introjs-arrow.top {
+    display: block !important;
+    left: 130px;
+  }
+
+}
+
+#quick-pct-change {
+  font-size: 1.2rem;
+} 
+
+@media (min-width: 576px) {
+
+  .border-top-xs-only {
+    border-top: 0px solid #dee2e6!important;
+  }
+
+  #quick-pct-change {
+    font-size: 2rem;
+  }
+
+  .h2-sm {
+  font-size: 1rem;
+  }
+
+  .trade-modal {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  
+  }
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+  .trade-modal {
+    width: 37.5rem;
+    right: -37.5rem;
+  }
+
+  .trade-modal.open {
+    right: 0px;
+    left: auto;
+  }
+
+} 
+
+@media (min-width: 1200px) {
+
+}
+

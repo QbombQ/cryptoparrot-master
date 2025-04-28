@@ -1,0 +1,28 @@
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+	.card-trader-status {
+	    padding-right: 180px;
+	    background: url(../../images/deposit.png);
+	    background-repeat: no-repeat;
+	    background-size: 190px;
+	    background-position: center right 40px;
+	}
+
+} 
+
+@media (min-width: 1200px) {
+
+
+
+
+} 

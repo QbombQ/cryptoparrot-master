@@ -1,0 +1,58 @@
+.btn-to-follow {
+	background: #fff;
+    padding: 9px;
+    border-radius: 7px;
+    border: 1px solid #e3e6e9;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.btn-to-follow:hover {
+	background: #f9f9f9;
+    border: 1px solid #e3e6e9;
+}
+
+.btn-to-follow i {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    color: #8a339a;
+}
+
+.btn-to-follow.following i {
+	display: block;
+}
+
+.btn-to-follow.following .early-follow {
+	display: none;
+}
+
+.btn-to-follow h6 {
+	line-height: 1;
+}
+.btn-to-follow p {
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+.follow-avatar {
+	width: 30px;
+    float: left;
+    margin-right: 10px;
+}
+
+.early-follow {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    font-size: 14px;
+    color: #8e339f;
+}
+
+.follow-button i {
+    display: none;
+}
+
+.unfollow-button .early-follow {
+    display: none;
+}

@@ -1,0 +1,66 @@
+version: "3"
+services:
+  db:
+    image: postgres:13.4-alpine3.14
+    restart: always
+    environment:
+      POSTGRES_DB: pgcrypto
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - code-network
+
+  php:
+    restart: always
+    build: ./docker
+    volumes:
+      - ./:/var/www/
+      - ./docker/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - db
+      - redis
+    networks:
+      - code-network
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8090:8080"
+    links:
+      - db:database
+    depends_on:
+      - db
+    networks:
+      - code-network
+
+  nginx:
+    build: ./docker/nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - php
+    networks:
+      - code-network
+
+  redis:
+    image: redis
+    command: redis-server --requirepass Redis123
+    ports:
+      - "6379:6379"
+    networks:
+      - code-network
+
+networks:
+  code-network:
+    driver: bridge
+
+volumes:
+  pgdata:

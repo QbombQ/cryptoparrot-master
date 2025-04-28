@@ -1,0 +1,106 @@
+body {
+	background: white;
+}
+
+
+.header-crypto-moon {
+	background: linear-gradient(180deg, #0E0E4D 0%, #4D4D99 100%);
+}
+
+.header-crypto-moon-inner {
+ 	background-image: url(crypto-moon-bg.svg);
+    min-height: 200px;
+    background-position: center;
+    background-size: auto 200px;
+    background-repeat: no-repeat;
+}
+
+.col-min {
+	min-height: 200px;
+}
+
+.btn-outline-primary {
+	border-color:#545490;
+	color:#545490;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #545490;
+    border-color: #545490;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #545490;
+    border-color: #545490;
+}
+
+.progress {
+    height: 44px;
+    background-color: #D2D3ED;
+    border-radius: 50px;
+}
+
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #545490;
+    transition: width .6s ease;
+}
+
+.progress-bar {
+    border-radius: 50px;
+}
+
+.logo {
+	max-width: 200px;
+}
+
+.meta .fa-stack {
+    display: inline-block;
+    height: 1.3em;
+    line-height: 1.3em;
+    position: relative;
+    vertical-align: middle;
+    width: 1.3em;
+}
+
+.meta .fa-stack-1x {
+    line-height: inherit;
+    font-size: 1rem;
+}
+
+.meta .fa-stack-2x {
+    font-size: 1.3em;
+}
+
+@media all and (min-width: 991px)
+{
+
+.logo {
+	max-width: 300px;
+}
+
+.header-crypto-moon-inner {
+ 	background-image: url(crypto-moon-bg.svg);
+    min-height: 300px;
+    background-position: center;
+    background-size: auto 300px;
+    background-repeat: no-repeat;
+}
+
+.col-min {
+	min-height: 300px;
+}
+
+
+}

@@ -1,0 +1,23 @@
+.card-post__image {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+a.card-post__category {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.btn-feed-option {
+    border-bottom: 2px solid #e1e5eb;
+    border-radius: 0px !important;
+}
+
+.btn-feed-option.active {
+    border-bottom: 2px solid #623869;
+}
+
+.table td, .table th {
+    border-top: 1px solid #dee2e6;
+}

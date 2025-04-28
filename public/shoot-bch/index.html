@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Call of Duty: BCH Annihilation</title>
+    <style>
+
+	#canvas {
+	    position: absolute; 
+	    top: 0px;
+	    left: 0px;
+	    cursor: none;
+	    background-color: black;
+	}
+	
+    </style>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Niffler.co">
+    <meta name="twitter:title" content="Call Of Duty: BCH Annihilation">
+    <meta name="twitter:description" content="Help save the world from Bitcoin Cash by playing Call of Duty: BCH Annihilation!"> 
+    <meta property="twitter:image:src" content="https://niffler.co/shoot-bch/niffler-game-og.jpg">
+    <link rel="icon" type="image/png" href="https://niffler.co/assets/images/favicon.png">
+
+    <meta name="description" content="Help save the world from Bitcoin Cash by playing Call of Duty: BCH Annihilation! ">
+
+    <meta property="og:title" content="Call Of Duty: BCH Annihilation"> 
+    <meta property="og:type" content="website">  
+    <meta property="fb:app_id" content="767643093432690">  
+    <meta property="og:image" content="https://niffler.co/shoot-bch/niffler-game-og.jpg" />
+    <meta property="og:url" content="https://niffler.co/shoot-bch/">  
+    <meta property="og:description" content="Help save the world from Bitcoin Cash by playing Call of Duty: BCH Annihilation!"> 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css?v=1"> 
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119269257-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-119269257-1');
+    </script>
+
+</head>
+<body>
+
+	<div id="start-screen" class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    	
+    <header class="masthead mb-auto">
+      </header>
+
+      <main role="main" class="inner cover pb-5">
+        <h1 class="cover-heading mt-4 mt-sm-0"><span class="text-yellow ">Call Of Duty:</span> <br class="" />BCH Annihilation</h1>
+        <p class="lead">In a world gone mad with forks, there can only be one Bitcoin.  It's time for you to man up soldier.</p> 
+
+		<p class="">The enemy is Bitcoin Cash and it's your call of duty as a serious bitcoin enthusiast to take this son of a bitch out before he does any more damage.</p> 
+
+		<p class="">The world and future of Bitcoin are counting on you!</p>
+        <p class="lead"> 
+          <a href="#" id="play" class="btn btn-lg btn-secondary">PLAY</a>
+        </p>
+
+
+        <p style="opacity: 0.3;">Brought to you by</p>
+        <a class="d-block mb-3" href="https://niffler.co/?ref=bch-game" title="Learn Crypto Trading"><img class="logo-landing" src="/assets/images/niffler-logo-white.png"></a>
+
+        <a class="px-2 py-1 btn btn-primary  btn-smm mt-2 font-weight-bold btn-sm " target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fniffler.co%2Fshoot-bch%2F&amp;src=sdkpreparse" > <i class="fab fa-facebook-f mr-1"></i>  Share</a> 
+
+        <a target="_blank" class="px-2 py-1 ml-2 mt-2 btn btn-primary btn-smm font-weight-bold btn-sm "
+          href="https://twitter.com/intent/tweet?text=Help%20save%20the%20world%20from%20Bitcoin%20Cash%20by%20playing%20Call%20of%20Duty%3A%20BCH%20Annihilation%21%20Find%20it%20only%20on%20https%3A%2F%2Fniffler.com%2Fshoot-bch%2F&hashtags=bitcoin,shootbch,crypto,cryptocurrency,cryptogames"
+          data-size="large">
+        <i class="fab fa-twitter mr-1"></i> Tweet</a>     
+
+
+      </main>  
+
+      <footer class="mastfoot mt-auto">
+
+      </footer>
+
+    </div> 
+
+    <div class="d-none relative" id="canvas-holder">
+
+    	<div class="logo-convas">
+    	 	<a href="https://niffler.co/?ref=mid-game" target="_blank" title="Learn Crypto Trading"><img class="logo-landing mb-2" src="/assets/images/niffler-logo-white.png"></a>
+    	 	<small class="d-block" style="line-height: 1.2;">Crypto Exchange Sandbox - <a href="https://niffler.co/?ref=mid-game" class="sandbox-link">Learn more</a></small>
+    		<button id="give-up" class="btn btn-lg mt-2 btn-secondary">Give Up</button> 
+   		</div>
+ 
+    <canvas id="canvas" width="1000" height="600"></canvas> 
+	</div>
+
+    <div id="end-screen" class="d-none cover-container  w-100 h-100 p-3 mx-auto flex-column">
+    	  
+    <header class="masthead mb-auto">
+      </header>
+
+      <main role="main" class="inner cover pb-5">
+        <h2 class="cover-heading mt-4 mt-sm-0"><span class="text-yellow " id="finish-heading"> Congratulations!</span> </h2>
+        <p class="lead" id="finish-text" > You've done well soldier! Bitcoin and humanity live another day! </p> 
+  
+        <p class="d-none">Now continue the fight by pre-registering on Niffler.co to start making money teaching newbies how to fend off Bitcoin Cash and properly trade cryptocurrencies without risking their own capital!  We'd would love to have you!</p>
+
+        <a href="/?rel=bch-game-finish"  class="d-none btn btn-lg btn-secondary mb-4">Pre-register</a>
+ 
+		<h4 class="mb-0 font-weight-bold"><i class="fal fa-crosshairs text-yellow"></i> Accuracy: <span id="res_accuracy" class="text-yellow"></span></h4> 
+		<h4 class="mb-0 font-weight-bold"><i class="fal fa-bullseye text-yellow"></i> Hits: <span id="res_hits" class="text-yellow"></span></h4>  
+		<h4 class="font-weight-bold"><i class="fal fa-times-circle text-yellow"></i> Shots fired: <span id="res_shots" class="text-yellow"></span></h4> 
+
+		<p class="lead">Spread the word:</p> 
+
+		<p class="">
+
+		<a id="tweet" target="_blank" class="px-2 py-1  mt-2 btn btn-primary btn-smm font-weight-bold btn-sm "
+          href=""
+          data-size="large">
+        <i class="fab fa-twitter mr-1"></i> Tweet</a>
+
+         <a class="px-2 py-1 btn btn-primary ml-2 btn-smm mt-2 font-weight-bold btn-sm " target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fniffler.co%2Fshoot-bch%2F&amp;src=sdkpreparse" > <i class="fab fa-facebook-f mr-1"></i>  Share</a> 
+ 
+           </p>
+
+        <p class="mb-0" style="opacity: 0.3;">Learn crypto trading without risking your capital</p>
+        <p style="opacity: 0.3;">OR get paid to teach others!</p> 
+        <a href="https://niffler.co/?ref=bch-game" title="Learn Crypto Trading"><img class="logo-landing" src="/assets/images/niffler-logo-white.png"></a>
+
+      </main>  
+
+      <footer class="mastfoot mt-auto">
+
+      </footer>
+
+    </div> 
+
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-HX5QvHXoIsrUAY0tE/wG8+Wt1MwvaY28d9Zciqcj6Ob7Tw99tFPo4YUXcZw9l930" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script>
+
+    $(document).ready(function(){
+
+	    $('#play').on('click',function(e){
+	    	e.preventDefault();
+	    	$('#start-screen').addClass('d-none').removeClass('d-flex');
+	    	$('#canvas-holder').removeClass('d-none'); 
+	    });
+
+		var targetX = 0, targetY = 0, shots = 0, hits = 0, accuracy = 0;
+		
+		window.requestAnimFrame = (function() {
+		    return window.requestAnimationFrame ||
+			    window.webkitRequestAnimationFrame ||
+			    window.mozRequestAnimationFrame ||
+			    window.oRequestAnimationFrame ||
+			    window.msRequestAnimationFrame ||
+			    function(callback) {
+				window.setTimeout(callback, 1000 / 60);
+			    };
+		})();
+	    
+		function Thing(mapX, mapY, x, y, canvas) {
+		    this.x = x;
+		    this.y = y;	
+		    this.mapX = mapX;
+		    this.mapY = mapY;
+		    this.height = 50;
+		    this.width = 50;
+		    this.direction = Math.floor((Math.random()*359));
+		    this.speed = Math.floor((Math.random()*50) + 5);
+		    this.canvas = canvas;
+		    this.erratic = (Math.floor((Math.random()* 4) + 1) === 1);
+		    this.gravitationalPull = 0;
+		    this.tick = 0;
+		    this.changeAt = Math.floor((Math.random()*50) + 1);
+		    this.hit = false;
+	       };
+
+		Thing.prototype.draw = function(ctx, sprite) {
+
+		    if(this.hit === false) {
+
+			ctx.drawImage(sprite, this.getMapX(), this.getMapY(),
+			    90, 90, 
+			    this.getX(), this.getY(), 
+			    this.getWidth(), this.getHeight());
+		    }
+
+		    return this;
+		};
+
+		Thing.prototype.move = function() {
+		    
+		    var delta = 0.1;
+
+		    this.x += Math.cos(this.toRad(this.direction)) * delta * this.speed;
+		    this.y -= Math.sin(this.toRad(this.direction)) * delta * this.speed;
+
+		    this.direction+= this.gravitationalPull;
+
+		    if(this.direction < 0) {
+			this.direction += 360;
+		    } else if(this.direction > 360) {
+			this.direction -= 360;
+		    }
+
+		    this.tick++;
+
+		    if(this.tick > this.changeAt) {
+			this.tick = 0;
+			this.gravitationalPull = Math.floor((Math.random()*6));
+
+			if(this.erratic) {
+			    this.direction = Math.floor((Math.random()*359));
+			    this.speed = Math.floor((Math.random()*50) + 5);
+			}
+		    }
+		};
+		
+		Thing.prototype.toRad = function(v) {
+		    return v * Math.PI / 180;
+		};
+
+		Thing.prototype.checkBoundaryCollision = function() {
+
+		    if (this.x + this.width > this.canvas.width ||
+			this.x < 0) {
+			this.direction = 2 * 0 - this.direction - 180;
+		    } else if(this.y < 0 ||
+			this.y + this.height > this.canvas.height) {
+			this.direction = 2 * 90 - this.direction - 180;
+		    }
+		};
+
+		Thing.prototype.correctXY = function() {
+
+		    if(this.x + this.width >= this.canvas.width) {
+			this.x = this.canvas.width - this.width ;
+		    } else if(this.x < 0) {
+			this.x = 0;
+		    } else if(this.y < 0) {
+			this.y = 0;
+		    } else if(this.y + this.height >= this.canvas.height) {
+			this.y = this.canvas.height - this.height ;
+		    }
+		};
+
+		Thing.prototype.getX = function() {
+		  return this.x;
+		};
+
+		Thing.prototype.getY = function() {
+		  return this.y;
+		};
+
+		Thing.prototype.getMapX = function() {
+		  return this.mapX;
+		};
+
+		Thing.prototype.getMapY = function() {
+		  return this.mapY;
+		};
+
+		Thing.prototype.getWidth = function() {
+		  return this.width;
+		};
+
+		Thing.prototype.getHeight = function() {
+		  return this.height;
+		};
+
+		Thing.prototype.setHit = function() {
+		  this.hit = true;
+		};
+
+		Thing.prototype.getHit = function() {
+		  return this.hit;
+		};
+
+		function Explosion(x, y, audio) {
+
+		    this.x = x;
+		    this.y = y;
+		    this.drawing = true;
+		    this.explosionFrame = 15;
+		    this.width = 200;
+		    this.height = 200;
+
+		    audio.play();
+
+		};
+
+		Explosion.prototype.getDrawing = function() {
+
+		    return this.drawing;
+
+		};
+
+		Explosion.prototype.checkHits = function(things) {
+
+		    if(this.drawing === false) {
+			return 0;
+		    }
+
+		    var centreX = (this.x - 100)  + (this.width / 2),
+			centreY = (this.y - 90) + (this.height / 2),
+			hits = 0;
+
+		    for(i = 0; i < things.length; i++) {
+
+			if(centreX > things[i].getX() &&
+			    centreX < things[i].getX() + things[i].getWidth() &&
+			    centreY > things[i].getY() &&
+			    centreY < things[i].getY() + things[i].getHeight() &&
+			    things[i].getHit() === false) {
+
+			    things[i].setHit();
+
+			    hits++;
+
+			}
+		     }
+
+		     return hits;
+		};  
+
+		Explosion.prototype.draw = function(ctx, explosion) {
+
+		    if(this.drawing === false) {
+			return this;
+		    }
+
+		    try {
+
+			if(this.explosionFrame-- <= 0) {
+			    this.drawing = false;
+			}
+
+			//Draw explostion
+			ctx.drawImage(explosion, ((this.explosionFrame % 10) -1) * 65, 0,
+			    65, 65, 
+			    this.x - 100, this.y - 90, 
+			    this.width, this.height);
+
+		    }
+		    catch(e) {
+
+		    }
+		    return this;
+
+		};
+
+
+
+		var explosions = [], ctx, canvas, sprites = [], sprite = null;
+
+		function loadSprite() {
+
+		    sprite = new Image();
+		    sprite.src = 'sprite.png';
+
+		    target = new Image();
+		    target.src = 'target.gif';
+		    
+		    explosion = new Image();
+		    explosion.src = 'explosion.png';
+
+		}
+
+		function createThings() {
+
+		    var i;
+
+		    spriteMap =  [
+			[0, 120], [140, 120], [270, 120] ,[270, 250],
+			[400, 120], [400, 250], [530, 250], [530, 120]
+		    ];
+
+		    for(i = 0; i < 10; i++) {
+			sprites.push(createThing(spriteMap));
+		    }
+		}
+
+		function createThing(spriteMap) {
+
+		    var cur, map = spriteMap[Math.floor(Math.random() * 
+				    (spriteMap.length - 1))];
+
+		    cur = new Thing(
+			map[0],
+			map[1],
+			Math.floor((Math.random()*canvas.width)+1),
+			Math.floor((Math.random()*canvas.height)+1),
+			canvas
+		    );
+
+		    return cur;
+		}
+	    
+		function init() {
+
+		    canvas = document.getElementById('canvas');
+		    ctx = canvas.getContext('2d');
+		    canvas.onmousemove = moveTarget;
+		    canvas.onclick = fire;
+		    resizeCanvas();
+		    loadSprite();
+		    createThings();
+		}
+		
+		function clearCanvas() {
+
+		    ctx.fillStyle = "black";
+		    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+		}
+	    
+		function start() {
+
+		    clearCanvas();
+		    
+		    for(i = 0; i < sprites.length; i++) {
+			sprites[i].draw(ctx, sprite).move();
+			sprites[i].checkBoundaryCollision(); 
+			sprites[i].correctXY(); 
+		    }
+		    
+		    
+		    for(i =0; i < explosions.length; i++) {
+			explosions[i].draw(ctx, explosion);
+			hits += explosions[i].checkHits(sprites);
+		    }
+		    
+		    if(shots > 0) {
+			accuracy = Math.round((hits / shots) * 100);
+		    }
+		    
+		    //ctx.fillStyle = "#cfcfcf";
+		    //ctx.font = "bold 16pt Arial";
+		    //ctx.fillText("Shots: " + shots + " Hits: " + hits + " Accuracy: " + accuracy + "%", 10, 30);
+
+		    $('#give-up').on('click',function(e){
+
+		    	e.preventDefault();
+
+		    	$('#finish-heading').html('Not everyone\'s cut out for war!');
+		    	$('#finish-text').html('No worries soldier you can help the resistance in others ways...share with another soldier in your network and let them continue the battle where you left off!');
+
+		    	$('#res_accuracy').html(accuracy+'%');
+			    $('#res_hits').html(hits);
+			    $('#res_shots').html(shots);
+
+			    $('#canvas-holder').addClass('d-none');
+		    	$('#end-screen').removeClass('d-none').addClass('d-flex');
+
+		    	$('#tweet').attr('href','https://twitter.com/intent/tweet?text=Calling%20all%20%23Bitcoin%20soldiers%20in%20my%20network...Play%20Call%20of%20Duty%3A%20BCH%20Annihilation%20on%20https%3A%2F%2Fniffler.co%2Fshoot-bch&hashtags=cryptocurrency,cryptotrader,cryptoexchange');   
+
+		    });    
+
+		    $('#res_accuracy').html(accuracy+'%');
+		    $('#res_hits').html(hits);
+		    $('#res_shots').html(shots);
+
+		    if(hits == 10){
+
+
+		    	$('#canvas-holder').addClass('d-none');
+		    	$('#end-screen').removeClass('d-none').addClass('d-flex');
+
+		    	$('#tweet').attr('href','https://twitter.com/intent/tweet?text=I%20managed%20to%20fend%20off%20BCH%20with%20'+shots+'%20shots%20fired%20and%20an%20accuracy%20rate%20of%20'+accuracy+'%25.%20Think%20you%20can%20do%20better%3F%20Play%20Call%20of%20Duty%3A%20BCH%20Annihilation%20on%20https%3A%2F%2Fniffler.co%2Fshoot-bch&hashtags=cryptocurrency,cryptotrader,cryptoexchange'); 
+
+		    }
+
+		    
+		    
+		    //Draw target
+		    ctx.drawImage(target, 0,0, 512, 512, 
+			targetX - 50, targetY - 50, 
+			100, 100);
+			
+		    requestAnimFrame(start);
+		    
+		}
+
+		function resizeCanvas() {
+
+		   ctx.canvas.width = window.innerWidth;
+		   ctx.canvas.height = window.innerHeight;
+
+		}
+
+		function fixPageXY(e) {
+
+		  if (e.pageX === null && e.clientX !== null ) {
+
+		    e.pageX = e.clientX + (html.scrollLeft || body && body.scrollLeft || 0);
+		    e.pageX -= html.clientLeft || 0;
+
+		    e.pageY = e.clientY + (html.scrollTop || body && body.scrollTop || 0);
+		    e.pageY -= html.clientTop || 0;
+		  }
+		}
+
+		function moveTarget(e) {
+
+		  e = e || window.event;
+		  fixPageXY(e);
+		  targetX = e.pageX;
+		  targetY = e.pageY;
+
+		}
+
+		function fire() {
+
+		    explosions.push(new Explosion(targetX, targetY, new Audio('bang.wav')));
+		    shots++;
+		}
+		
+		// resize the canvas to fill browser window dynamically
+		window.addEventListener('resize', resizeCanvas, false);
+
+		// Start the process
+		window.onload = function() {
+		   init();
+		   start();
+		};
+
+	});
+    
+    </script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=767643093432690&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* VERIFICATION */
+
+.btn-group-country {
+    display: block;
+}
+
+.btn-group-country .btn-country {
+    width: calc(50% - 7px);
+    background: #fff;
+    margin: 0px !important;
+    display: block;
+    float: left;
+    border: 1px solid #ededed;
+    margin-right: 7px !important;
+    border-radius: 3px !important;
+    margin-bottom: 7px !important;
+    padding-top: 60px;
+}
+
+.btn-group-country .btn-country img {
+    width: 36px;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    margin-left: -18px;
+}
+
+.btn-group-country label.btn.btn-country.active {
+    border: 1px solid #7d368a;
+}
+
+
+.btn-group-type {
+    display: block;
+}
+
+.btn-group-type .btn-type {
+    width: calc(50% - 7px);
+    background: #fff;
+    margin: 0px !important;
+    display: block;
+    float: left;
+    border: 1px solid #ededed;
+    margin-right: 7px !important;
+    border-radius: 3px !important;
+    margin-bottom: 7px !important;
+    padding-top: 81px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.btn-group-type .btn-type img {
+    width: 50px;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -25px;
+}
+  
+.btn-group-type label.btn.btn-type.active {
+    border: 1px solid #7d368a;
+}
+
+.verification-step {
+    position: relative;
+    padding-right: 0;
+    padding-top: 0px;
+    padding-left: 37px;
+    padding-bottom: 10px;
+}
+
+.verification-step-goal {
+    font-size: 24px;
+}
+
+.verification-step svg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    margin: 32px auto;
+}
+
+.verification-step .checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #327fd9;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+ 
+.verification-step .checkmark {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 6px auto;
+    box-shadow: inset 0px 0px 0px #327fd9;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.verification-step .checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+} 
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #327fd9;
+  }
+}
+
+
+@media (min-width: 576px) {
+
+   
+}
+
+@media (min-width: 768px) {
+   
+}
+
+@media (min-width: 992px) {
+  .btn-group-country .btn-country {
+    width: calc(25% - 7px);
+  }
+}
+
+@media (min-width: 1200px) { 
+   
+}
+

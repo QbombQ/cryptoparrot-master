@@ -1,0 +1,121 @@
+.competition-card {
+    border-radius: 0rem;
+    min-height: 300px;
+    background-size: contain;
+    background: linear-gradient(180deg, #545490 0%, #8282C4 100%)
+}
+
+
+.competition-card.comp-2 {
+    background: linear-gradient(180deg, #545490 0%, #8282C4 100%)
+}
+
+.competition-card p a {
+    color: #ff847d;
+}
+ 
+.comp-alert {
+    border-radius: 3px !important;
+}
+
+.alert {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.comp-logo {
+    width: 8rem;
+    height: 3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.comp-logo {
+    font-size: 0.7rem;
+    display: block;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+ 
+.comp-logo-holder {
+    background-size: contain;
+    top: 1.5rem;
+    bottom: 0.5rem;
+    position: absolute;
+    right: 0.5rem;
+    left: 0.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.comp-ended {
+    opacity: 1;
+    filter: grayscale(0.5);
+    transition: all 0.25s linear;
+}
+
+.comp-ended:hover {
+	opacity: 1;
+	filter: grayscale(0);
+}
+
+.competition-card .btn-outline-light {
+    background-color: transparent;
+    background-image: none;
+    border-color: #FBFBFB;
+    color: #ffffff;
+}
+
+span.sponsored-by {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.4;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.comp-stats {
+    background: #ffffff;
+}
+
+.competition-card .lead {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+span.stats-label {
+    display: block;
+    font-weight: bold;
+    color: #000;
+    opacity: 0.4;
+    font-size: 0.7rem;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
+img.competition-avatar {
+    width: 25px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+@media (min-width: 992px) {
+
+.competition-card {
+    border-radius: 0.25rem;
+}
+
+.comp-stats {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+}

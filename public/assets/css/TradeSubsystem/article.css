@@ -1,0 +1,130 @@
+.author-box,
+.post-inner {
+    border-radius: 8px;
+}
+
+table.btn-primary span {
+	display: block;
+}
+
+table.btn-primary {
+	font-size: 1.125rem;
+	margin-right: 1.75rem;
+ 	margin-left: 1.75rem;
+ 	margin-bottom: 2.5rem;
+}
+.post-inner p {
+ 	font-size: 16px;
+ 	padding-right: 1.75rem;
+ 	padding-left: 1.75rem;
+}
+ 
+.news-content a {
+    color: #545490;
+    text-decoration: underline;
+}
+
+.main-article {
+	overflow: inherit;
+}
+
+.blog-author-avatar {
+	border-radius: 50%;
+}
+ 
+.post-inner h1,
+.post-inner h2,
+.post-inner h3,
+.post-inner h4,
+.post-inner h5,
+.post-inner h6 {
+ 	padding-right: 1.75rem;
+ 	padding-left: 1.75rem;
+}
+ 
+.youtube-embed-wrapper {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.single-post-wrap {
+	max-width: 1550px !important;
+    margin: 0 auto;
+}
+
+.post-inner img {
+	margin-top: 2rem;
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom: 1.5rem;
+}
+
+.post-inner img.article-hero {
+	margin-top: 0rem;
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom: 0rem;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.ssk-group {
+    position: sticky;
+    top: 8.4rem;
+}
+
+.ssk-group i {
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 992px) {
+
+table.btn-primary {
+	font-size: 1.125rem;
+	margin-right: 2.75rem;
+ 	margin-left: 2.75rem;
+ 	margin-bottom: 2.5rem;
+}
+.post-inner p {
+ 	font-size: 19px;
+ 	padding-right: 2.75rem;
+ 	padding-left: 2.75rem;
+}
+
+.main-article {
+	overflow: inherit;
+}
+ 
+.post-inner h1,
+.post-inner h2,
+.post-inner h3,
+.post-inner h4,
+.post-inner h5,
+.post-inner h6 {
+ 	padding-right: 2.75rem;
+ 	padding-left: 2.75rem;
+}
+ 
+.youtube-embed-wrapper {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.post-inner img {
+	margin-top: 2rem;
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom: 2.5rem;
+}
+
+.post-inner img.article-hero {
+	margin-top: 0rem;
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom: 0rem;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+}

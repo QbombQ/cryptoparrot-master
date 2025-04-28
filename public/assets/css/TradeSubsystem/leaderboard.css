@@ -1,0 +1,83 @@
+.leader-avatar {
+  position: relative;
+}
+
+.leader-avatar img {
+  width: 5.25rem;
+}
+
+.leader-rank {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -0.35rem;
+  min-width: 2rem; 
+  left: 50%;
+}
+
+.leader-stats {
+  position: relative;
+}
+
+.card-leader .leader-stats:before {
+  content: '';
+  background:#fff;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}   
+
+.card-leader:hover .leader-stats:before {
+  display: block;
+} 
+
+.leader-stats .btn {
+  position: absolute;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  display: none;
+  z-index: 3;
+}  
+
+.card-leader:hover .leader-stats .btn,
+.card-leader:hover .leader-stats:before {
+  display: block;
+} 
+
+
+/* RESPONSIVE */
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) { 
+}
+
+@media (min-width: 1500px) { 
+}
+
+ 

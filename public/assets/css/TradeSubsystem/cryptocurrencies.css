@@ -1,0 +1,128 @@
+.ct-chart svg {
+	vertical-align: middle;
+}  
+
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+    stroke: #63366a;
+}
+
+.ct-line {
+    stroke-width: 3px;
+}
+
+.currency-icon {
+    height: 2rem;
+    width: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+} 
+
+.currency-icon-bitcoin { background-image: url(../../images/crypto-icons/color/btc.svg); }
+.currency-icon-ethereum { background-image: url(../../images/crypto-icons/color/eth.svg); }
+.currency-icon-litecoin { background-image: url(../../images/crypto-icons/color/ltc.svg); }
+.currency-icon-ripple { background-image: url(../../images/crypto-icons/color/xrp.svg); }
+.currency-icon-eos { background-image: url(../../images/crypto-icons/color/eos.svg); }
+.currency-icon-monero { background-image: url(../../images/crypto-icons/color/xmr.svg); }
+.currency-icon-neo { background-image: url(../../images/crypto-icons/color/neo.svg); }
+.currency-icon-omisego { background-image: url(../../images/crypto-icons/color/omg.svg); }
+.currency-icon-dash { background-image: url(../../images/crypto-icons/color/dash.svg); }
+.currency-icon-tube { background-image: url(../../images/crypto-icons/color/tube.svg); }
+.currency-icon-digibyte { background-image: url(../../images/crypto-icons/color/dgb.svg); }
+.currency-icon-doge { background-image: url(../../images/crypto-icons/color/doge.svg); } 
+.currency-icon-steem { background-image: url(../../images/crypto-icons/color/steem.svg); } 
+.currency-icon-thorecoin { background-image: url(../../images/crypto-icons/color/thr.svg); } 
+.currency-icon-ravencoin { background-image: url(../../images/crypto-icons/color/rvn.svg); } 
+.currency-icon-basic-attention-token { background-image: url(../../images/crypto-icons/color/bat.svg); } 
+.currency-icon-bat { background-image: url(../../images/crypto-icons/color/bat.svg); } 
+.currency-icon-apple-inc { background-image: url(../../images/crypto-icons/color/aapl.svg); } 
+.currency-icon-euro { background-image: url(../../images/crypto-icons/color/eur.svg); } 
+.currency-icon-pound-streling { background-image: url(../../images/crypto-icons/color/gbp.svg); } 
+.currency-icon-australian-dollar { background-image: url(../../images/crypto-icons/color/aud.svg); } 
+.currency-icon-new-zealand-dollar { background-image: url(../../images/crypto-icons/color/nzd.svg); } 
+.currency-icon-amazoncom-inc { background-image: url(../../images/crypto-icons/color/amzn.svg); } 
+.currency-icon-tesla-inc { background-image: url(../../images/crypto-icons/color/tsla.svg); } 
+.currency-icon-netflix-inc { background-image: url(../../images/crypto-icons/color/nflx.svg); } 
+.currency-icon-microsoft-corporation { background-image: url(../../images/crypto-icons/color/msft.svg); } 
+.currency-icon-mcdonalds-corp { background-image: url(../../images/crypto-icons/color/mcd.svg); } 
+.currency-icon-jpmorgan-chase-co { background-image: url(../../images/crypto-icons/color/jpm.svg); } 
+.currency-icon-binance-coin { background-image: url(../../images/crypto-icons/color/bnb.svg); } 
+.currency-icon-polkadot { background-image: url(../../images/crypto-icons/color/dot.svg); } 
+.currency-icon-cardano { background-image: url(../../images/crypto-icons/color/ada.svg); } 
+.currency-icon-chainlink { background-image: url(../../images/crypto-icons/color/link.svg); } 
+.currency-icon-bitcoin-cash { background-image: url(../../images/crypto-icons/color/bch.svg); } 
+.currency-icon-stellar { background-image: url(../../images/crypto-icons/color/xlm.svg); } 
+
+.currrency-icon-inner {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain; 
+    padding-left: 2.4rem;
+}
+
+.icon-bitcoin { background-image: url(../../images/crypto-icons/color/btc.svg); }
+.icon-ethereum { background-image: url(../../images/crypto-icons/color/eth.svg); }
+.icon-litecoin { background-image: url(../../images/crypto-icons/color/ltc.svg); }
+.icon-ripple { background-image: url(../../images/crypto-icons/color/xrp.svg); }
+.icon-eos { background-image: url(../../images/crypto-icons/color/eos.svg); }
+.icon-monero { background-image: url(../../images/crypto-icons/color/xmr.svg); }
+.icon-neo { background-image: url(../../images/crypto-icons/color/neo.svg); }
+.icon-omisego { background-image: url(../../images/crypto-icons/color/omg.svg); }
+.icon-dash { background-image: url(../../images/crypto-icons/color/dash.svg); }
+.icon-tube { background-image: url(../../images/crypto-icons/color/tube.svg); }
+.icon-digibyte { background-image: url(../../images/crypto-icons/color/dgb.svg); }
+.icon-doge { background-image: url(../../images/crypto-icons/color/doge.svg); } 
+.icon-steem { background-image: url(../../images/crypto-icons/color/steem.svg); } 
+.icon-thorecoin { background-image: url(../../images/crypto-icons/color/thr.svg); } 
+.icon-ravencoin { background-image: url(../../images/crypto-icons/color/rvn.svg); } 
+.icon-binance-coin { background-image: url(../../images/crypto-icons/color/bnb.svg); } 
+.icon-polkadot { background-image: url(../../images/crypto-icons/color/dot.svg); } 
+.icon-cardano { background-image: url(../../images/crypto-icons/color/ada.svg); } 
+.icon-chainlink { background-image: url(../../images/crypto-icons/color/link.svg); } 
+.icon-bitcoin-cash { background-image: url(../../images/crypto-icons/color/bch.svg); } 
+.icon-stellar { background-image: url(../../images/crypto-icons/color/xlm.svg); } 
+
+
+.icon-basic-attention-token { background-image: url(../../images/crypto-icons/color/bat.svg); } 
+.icon-bat { background-image: url(../../images/crypto-icons/color/bat.svg); } 
+.icon-apple-inc { background-image: url(../../images/crypto-icons/color/aapl.svg); } 
+.icon-pound-streling { background-image: url(../../images/crypto-icons/color/gbp.svg); } 
+.icon-euro { background-image: url(../../images/crypto-icons/color/eur.svg); } 
+.icon-australian-dollar { background-image: url(../../images/crypto-icons/color/aud.svg); } 
+.icon-new-zealand-dollar { background-image: url(../../images/crypto-icons/color/nzd.svg); } 
+.icon-amazoncom-inc { background-image: url(../../images/crypto-icons/color/amzn.svg); } 
+.icon-tesla-inc { background-image: url(../../images/crypto-icons/color/tsla.svg); } 
+.icon-netflix-inc { background-image: url(../../images/crypto-icons/color/nflx.svg); } 
+.icon-microsoft-corporation { background-image: url(../../images/crypto-icons/color/msft.svg); } 
+.icon-mcdonalds-corp { background-image: url(../../images/crypto-icons/color/mcd.svg); } 
+.icon-mcdonalds-corp { background-image: url(../../images/crypto-icons/color/mcd.svg); } 
+.icon-jpmorgan-chase-co { background-image: url(../../images/crypto-icons/color/jpm.svg); } 
+ 
+    
+.card-currency.card-transparent {
+    background-color: transparent;
+    border: 0px;
+}
+
+.card-currency.card-transparent .card-body {
+    padding-left: 80px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-position: 0px center;
+    background-size: 50px;
+}
+
+.external-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f04743;
+    position: relative;
+    padding-left: 25px;
+}
+
+.external-link i {
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}

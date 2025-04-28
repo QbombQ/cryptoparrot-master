@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Model\Providers\Services\FrontSubsystem;
+
+use Illuminate\Support\ServiceProvider;
+
+class UserServiceProvider extends ServiceProvider
+{
+
+    public function boot()
+    {
+
+
+
+    }
+
+    public function register()
+    {
+
+        $this->app->bind('App\Model\Contracts\Interfaces\Services\FrontSubsystem\UserServiceInterface', 'App\Model\Services\FrontSubsystem\UserService');
+
+    }
+	
+}

@@ -1,0 +1,45 @@
+.profile-header {
+    padding-left: 4.875rem;
+    position: relative;
+}
+
+.profile-avatar {
+    width: 3.875rem;
+    border-radius:50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+} 
+
+.modal-comments {
+    padding: 0 20px;
+}
+
+.badge-profile {
+    width: 1.6rem;
+}
+
+@media (min-width: 576px){
+    .tabs-profile .nav-link {
+       font-size:1rem;
+    }
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0.625rem;
+    }
+} 
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.875rem auto;
+    }
+}
+
+@media (min-width: 992px){
+.modal-lg {
+    max-width: 40rem;
+}
+}

@@ -1,0 +1,12 @@
+/* FEED */
+
+.user-activity__item__icon i {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    width: 1rem;
+}
+
+.edit-user-details__bg .edit-user-details__change-background {
+    right: 0px;
+    left: auto; 
+} 

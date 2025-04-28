@@ -1,0 +1,339 @@
+.logo {
+  max-width: 150px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+a {
+    color: #62366a;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.h1, h1 {
+    font-size: 2rem;
+}
+
+.price-now.up {
+    color: #3ebb2a;
+}
+
+.price-now.down {
+    color: #d85959;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #8c2d9d;
+    border-color: #8d259f;
+}
+
+
+.btn-secondary {
+    color: #fff;
+    background-color: #039ff5;
+    border-color: #039ff5;
+}
+
+.btn-secondary.ssk:before {
+  display: none;
+}
+
+.btn-secondary.ssk {
+    font-size: 1.2rem;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.text-yellow {
+  color: #f7c98b;
+}
+
+.scroll-hint-icon {
+    top: 70px;
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.round-bg {
+    border-bottom-left-radius: 50% 16%;
+    border-bottom-right-radius: 50% 16%;
+    margin-left: -8%;
+    margin-right: -8%;
+        background: rgb(98,56,105);
+    background: -moz-linear-gradient(45deg, rgba(98,56,105,1) 0%, rgba(156,49,175,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(98,56,105,1) 0%,rgba(156,49,175,1) 100%);
+    background: linear-gradient(45deg, rgba(98,56,105,1) 0%,rgba(156,49,175,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#623869', endColorstr='#9c31af',GradientType=1 );
+}
+
+.number-input {
+    max-width: 80px;
+    border-radius: 4px !important;
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem 1rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #212529;
+    background-color: #ffffff;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+.nav-pills a {
+    color: #212529;
+}
+
+#calculator {
+    width: 130px;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    top: 9px;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.select2-container .select2-selection--single {
+    height: 48px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 48px;
+    width: 38px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 46px;
+}
+
+td,th {
+  white-space: nowrap;
+}
+
+@-webkit-keyframes slideBitcoin {
+    from{
+        background-position:575px;
+    }
+    to{
+        background-position:1725px;
+    }
+}
+
+@-webkit-keyframes slideCigarette {
+    from{
+        background-position:575px 20px;
+    }
+    to{
+        background-position:1725px 20px;
+    }
+}
+
+.icon-cigarette {
+    background:url(cigarette.svg);
+    -webkit-animation: slideCigarette 15s linear infinite;
+    background-size: 100px;
+    background-position: 575px 20px;
+    background-repeat: repeat-x;
+}
+ 
+.icon-bitcoin {
+    background: url(bitcoin.svg);
+    -webkit-animation: slideBitcoin 15s linear infinite;
+    background-size: 100px;
+    background-repeat: repeat-x;
+}
+
+.gradient-white-left,
+.gradient-white-right {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.gradient-white-left {
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+.gradient-white-right {
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+}
+
+
+.animator {
+  min-height: 150px;
+}
+
+svg * {
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+}
+
+.buttons > :nth-child(1) {
+  -webkit-animation: buttonClick 2s infinite;
+          animation: buttonClick 2s infinite;
+  -webkit-animation-delay: -2.7s;
+          animation-delay: -2.7s;
+}
+
+.display-digits > :nth-child(1) {
+  -webkit-animation: typeDigit 2s infinite;
+          animation: typeDigit 2s infinite;
+  -webkit-animation-delay: -2.7s;
+          animation-delay: -2.7s;
+}
+
+.buttons > :nth-child(3) {
+  -webkit-animation: buttonClick 2s infinite;
+          animation: buttonClick 2s infinite;
+  -webkit-animation-delay: -8.1s;
+          animation-delay: -8.1s;
+}
+
+.display-digits > :nth-child(2) {
+  -webkit-animation: typeDigit 2s infinite;
+          animation: typeDigit 2s infinite;
+  -webkit-animation-delay: -8.1s;
+          animation-delay: -8.1s;
+}
+
+.buttons > :nth-child(5) {
+  -webkit-animation: buttonClick 2s infinite;
+          animation: buttonClick 2s infinite;
+  -webkit-animation-delay: -13.5s;
+          animation-delay: -13.5s;
+}
+
+.display-digits > :nth-child(3) {
+  -webkit-animation: typeDigit 2s infinite;
+          animation: typeDigit 2s infinite;
+  -webkit-animation-delay: -13.5s;
+          animation-delay: -13.5s;
+}
+
+.buttons > :nth-child(7) {
+  -webkit-animation: buttonClick 2s infinite;
+          animation: buttonClick 2s infinite;
+  -webkit-animation-delay: -18.9s;
+          animation-delay: -18.9s;
+}
+
+.display-digits > :nth-child(4) {
+  -webkit-animation: typeDigit 2s infinite;
+          animation: typeDigit 2s infinite;
+  -webkit-animation-delay: -18.9s;
+          animation-delay: -18.9s;
+}
+
+.buttons > :nth-child(8) {
+  -webkit-animation: buttonClick 2s infinite;
+          animation: buttonClick 2s infinite;
+  -webkit-animation-delay: -21.6s;
+          animation-delay: -21.6s;
+}
+
+.display-digits > :nth-child(5) {
+  -webkit-animation: typeDigit 2s infinite;
+          animation: typeDigit 2s infinite;
+  -webkit-animation-delay: -21.6s;
+          animation-delay: -21.6s;
+}
+
+@-webkit-keyframes buttonClick {
+  0%, 20%, 100% {
+    stroke: transparent;
+  }
+  10% {
+    stroke: grey;
+    stroke-opacity: 1;
+    stroke-width: 0.8%;
+  }
+}
+
+@keyframes buttonClick {
+  0%, 20%, 100% {
+    stroke: transparent;
+  }
+  10% {
+    stroke: grey;
+    stroke-opacity: 1;
+    stroke-width: 0.8%;
+  }
+}
+@-webkit-keyframes typeDigit {
+  0% {
+    opacity: 0;
+  }
+  10%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes typeDigit {
+  0% {
+    opacity: 0;
+  }
+  10%, 100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .h1, h1 {
+      font-size: 2.5rem;
+  }
+
+  .btn-secondary.ssk {
+    font-size: 1.25rem;
+  }
+
+}
