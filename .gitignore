@@ -5,6 +5,7 @@
 /.vscode
 /node_modules
 /public/storage
+/bootstrap/cache/*
 /vendor
 /docker/.docker
 /docker/dbdata
