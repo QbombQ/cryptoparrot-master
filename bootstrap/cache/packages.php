@@ -31,6 +31,13 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
+  'fruitcake/laravel-cors' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Fruitcake\\Cors\\CorsServiceProvider',
+    ),
+  ),
   'intervention/image' => 
   array (
     'aliases' => 
@@ -40,17 +47,6 @@
     'providers' => 
     array (
       0 => 'Intervention\\Image\\ImageServiceProvider',
-    ),
-  ),
-  'kawankoding/laravel-fcm' => 
-  array (
-    'aliases' => 
-    array (
-      'Fcm' => 'Kawankoding\\Fcm\\FcmFacade',
-    ),
-    'providers' => 
-    array (
-      0 => 'Kawankoding\\Fcm\\FcmServiceProvider',
     ),
   ),
   'laravel/slack-notification-channel' => 
