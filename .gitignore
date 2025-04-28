@@ -4,7 +4,6 @@
 /.vagrant
 /.vscode
 /node_modules
-/bootstrap/cache/*
 /public/storage
 /vendor
 /docker/.docker
