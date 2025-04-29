@@ -127,7 +127,6 @@ return [
 
     'providers' => [
 
-        Kawankoding\Fcm\FcmServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...
@@ -434,7 +433,6 @@ return [
         'Avatar'    => Laravolt\Avatar\Facade::class,
         'LaravelVideoEmbed' => Merujan99\LaravelVideoEmbed\Facades\LaravelVideoEmbed::class,
         'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
-        'Fcm' => Kawankoding\Fcm\FcmFacade::class,
     ],
 
 ];
